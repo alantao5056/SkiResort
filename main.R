@@ -20,6 +20,6 @@ data |>
 data |>
   ggplot(aes(x = Year, y=Profit, color=Resort)) +
   geom_point() +
-  geom_line() +
+  geom_smooth(se=FALSE) +
   scale_y_continuous(labels = scales::dollar_format()) +
   labs(title="Profits of Different Ski Resorts")
